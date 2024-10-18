@@ -4,12 +4,18 @@ function clearDisplay() {
 
 function deleteLast() {
     let display = document.getElementById('display');
-    display.value = display.value.slice(0, -1); 
+    display.value = display.value.slice(0, -1);
 }
 
-
 function calculate(value) {
-    document.getElementById('display').value += value;
+    let display = document.getElementById('display').value;
+
+    // Cek jika display hanya mengandung '0', ganti dengan value baru
+    if (display === '0' && value !== '.') {
+        document.getElementById('display').value = value;
+    } else {
+        document.getElementById('display').value += value;
+    }
 }
 
 function calculateResult() {
