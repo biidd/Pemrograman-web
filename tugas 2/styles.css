@@ -1,6 +1,5 @@
-/* Mengatur gaya umum untuk aplikasi */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #76e1ff;
     display: flex;
     justify-content: center;
@@ -9,7 +8,6 @@ body {
     margin: 0;
 }
 
-/* Container utama to-do list */
 .todo-container {
     background-color: white;
     border-radius: 20px;
@@ -21,12 +19,10 @@ body {
     padding: 10px 20px 20px;
 }
 
-/* Gaya untuk judul */
 .todo-container h1 {
     margin-bottom: 20px;
 }
 
-/* Input dan tombol penambahan tugas */
 .input-container {
     display: flex;
     justify-content: space-between;
@@ -55,10 +51,10 @@ body {
     background-color: #00b8d0;
 }
 
-/* Daftar tugas */
 ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 li {
@@ -70,11 +66,38 @@ li {
     align-items: center;
     border-radius: 5px;
     border-radius: 10px;
+    word-wrap: break-word; 
+    word-break: break-all; 
+    white-space: normal; /
 }
 
 li.completed {
     text-decoration: line-through;
     background-color: #b1def9;
+}
+
+li span {
+    max-width: 70%;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.edit-btn {
+    background-color: #5bc0de;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #31b0d5;
 }
 
 button.delete-btn {
@@ -84,7 +107,6 @@ button.delete-btn {
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
-    border-radius: 10px;
 }
 
 button.delete-btn:hover {
