@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- Panggil file CSS eksternal -->
+    <link rel="stylesheet" href="style.css" />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Kalkulator -->
+      <section id="calculator">
+        <h2>Kalkulator</h2>
+        <div class="calculator">
+          <input type="text" id="display" disabled />
+          <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">Del</button>
+            <button onclick="calculate('%')">%</button>
+            <button onclick="calculate('/')">/</button>
+            <button onclick="calculate('**')">^</button>
+
+            <button onclick="calculate('7')">7</button>
+            <button onclick="calculate('8')">8</button>
+            <button onclick="calculate('9')">9</button>
+            <button onclick="calculate('*')">*</button>
+
+            <button onclick="calculate('4')">4</button>
+            <button onclick="calculate('5')">5</button>
+            <button onclick="calculate('6')">6</button>
+            <button onclick="calculate('-')">-</button>
+          
+            <button onclick="calculate('1')">1</button>
+            <button onclick="calculate('2')">2</button>
+            <button onclick="calculate('3')">3</button>
+            <button onclick="calculate('+')">+</button>
+
+            <button onclick="calculate(' 0 ')">0</button>
+            <button onclick="calculate('.')">.</button>
+            <button onclick="calculateResult('=')">=</button>
+ 
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Panggil file JavaScript eksternal -->
+    <script src="script.js"></script>
+  </body>
+</html>

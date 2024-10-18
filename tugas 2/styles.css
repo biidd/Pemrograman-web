@@ -1,0 +1,92 @@
+/* Mengatur gaya umum untuk aplikasi */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #76e1ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container utama to-do list */
+.todo-container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba( 0, 0, 0, 1);
+    padding: 10px 20px 20px;
+}
+
+/* Gaya untuk judul */
+.todo-container h1 {
+    margin-bottom: 20px;
+}
+
+/* Input dan tombol penambahan tugas */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 78%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.input-container button {
+    width: 15%;
+    background-color: #5fcff2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input-container button:hover {
+    background-color: #00b8d0;
+}
+
+/* Daftar tugas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border-radius: 10px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #b1def9;
+}
+
+button.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button.delete-btn:hover {
+    background-color: #c0392b;
+}
